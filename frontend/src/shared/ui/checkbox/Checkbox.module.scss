@@ -20,7 +20,8 @@
 	border: 2px solid var(--accent-color);
 	border-radius: 6px;
 	background-color: transparent;
-
+	flex-shrink: 0;
+	
 	@include md() {
 		width: 28px;
 		height: 28px;

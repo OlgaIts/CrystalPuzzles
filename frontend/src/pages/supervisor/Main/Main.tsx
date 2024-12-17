@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Page, CardLink, Button, Preloader } from '@shared/ui';
+import { Page, CardLink, Button } from '@shared/ui';
 import { useResize } from '@shared/hooks';
 import { ScheduleList } from '@features';
 import { Notification } from '@widgets';
