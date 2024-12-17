@@ -8,6 +8,7 @@ import { Lesson } from '@entities';
 import ScheduleRouteTo from '@shared/lib/scheduleRouteTo';
 import { selectProfile } from '@app/providers/store';
 import styles from './Schedule.module.scss';
+import classNames from 'classnames';
 
 interface SchedulePageProps {
 	title: string;
@@ -38,7 +39,7 @@ export default function SchedulePage({ link, title }: SchedulePageProps) {
 	return (
 		<Page title={title}>
 			<div className={styles.wrapper}>
-				<div className={styles.table}>
+				<div className={classNames(data.length === 0 ? '' : styles.table)}>
 					{data.length
 						? data
 								.sort((a: any, b: any) =>
