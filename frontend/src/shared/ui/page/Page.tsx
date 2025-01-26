@@ -11,7 +11,7 @@ interface PageProps {
 	children: ReactNode;
 	className?: string;
 }
-
+// Merge with checkInPage wrapper
 export default function Page({ title, children, className }: PageProps) {
 	const dispatch = useDispatch();
 	const isLoading = useSelector(selectIsLoading);

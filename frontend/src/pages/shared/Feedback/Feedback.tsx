@@ -5,6 +5,7 @@ interface FeedbackPageProps {
 	title: string;
 }
 
+// TODO: add props button and move button to feedback
 export default function FeedbackPage({ title }: FeedbackPageProps) {
 	return (
 		<Page title={title}>

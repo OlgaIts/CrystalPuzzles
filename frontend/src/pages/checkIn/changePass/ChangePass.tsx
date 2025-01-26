@@ -1,11 +1,11 @@
 import { mapUserForm } from 'entities/profile';
 import { Button } from 'shared/ui';
 import Politics from '../policy/Policy';
-import Password from '../password/Password';
+import Password from '../../../shared/ui/input/password/Password';
 import styles from './ChangePass.module.scss';
 import { FormEvent, useState } from 'react';
-import Wrapper from '../wrapper/Wrapper';
-import Input from '../input/Input';
+import Wrapper from '../../../shared/ui/page/CheckInPage/CheckInPage';
+import Input from '../../../shared/ui/input/input/Input';
 import { Auth } from 'shared/api';
 
 export default function ChangePass() {

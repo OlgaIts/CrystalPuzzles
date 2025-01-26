@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Page, Button } from 'shared/ui';
 import joinName from 'entities/profile/assets/joinName';
-import ProfileInfo from './ProfileInfo/ProfileInfo';
-import EditProfile from './editProfile/EditProfile';
+import ProfileInfo from '../../../entities/profile/ui/ProfileInfo/ProfileInfo';
+import EditProfile from '../../../entities/profile/ui/editProfile/EditProfile';
 import styles from './Profile.module.scss';
 import ProfileAvatar from 'entities/profile/ui/ProfileAvatar';
 

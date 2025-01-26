@@ -5,7 +5,7 @@ interface SpinnerProps {
 	isLoading: boolean;
 	children: React.ReactNode;
 }
-
+// TODO: erleichern
 export default function Spinner({ children, isLoading }: SpinnerProps) {
 	return (
 		<>

@@ -1,4 +1,4 @@
-export { AddLesson } from './scheduleModal/ui/AddLesson/AddLesson';
+export { AddLesson } from './Table/scheduleModal/ui/AddLesson/AddLesson';
 export { default as Sidebar } from './sidebar/Sidebar';
 export { default as Header } from './header/Header';
 export { default as Footer } from './footer/Footer';

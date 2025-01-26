@@ -3,7 +3,7 @@ import { Page, Button } from 'shared/ui';
 import ProfileCard from './ProfileCard/ProfileCard';
 import Info from './Info/Info';
 import { useState } from 'react';
-import StudentsDropdown from 'features/studentsDropdown/StudentsDropdown';
+import StudentsDropdown from 'entities/student/ui/studentsDropdown/StudentsDropdown';
 import { useLoaderData } from 'react-router-dom';
 import useCreateCheckList from '../hooks/useCreateCheckList';
 import ExercisesMemo from 'widgets/exercises/Exercises';

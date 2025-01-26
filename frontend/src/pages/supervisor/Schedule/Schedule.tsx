@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Page } from 'shared/ui';
-import Table from './Table/Table';
-import TrainersDropdown from 'features/trainersDropdown/TrainersDropdown';
+import Table from '../../../widgets/Table/Table';
+import TrainersDropdown from 'entities/trainer/ui/trainersDropdown/TrainersDropdown';
 import styles from './Schedule.module.scss';
 
 interface SchedulePageProps {
