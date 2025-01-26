@@ -16,7 +16,6 @@ export {
 	createLessons,
 	setLessons,
 	deleteLesson,
-	updateLesson,
 	selectLessons
 } from './schedule';
 

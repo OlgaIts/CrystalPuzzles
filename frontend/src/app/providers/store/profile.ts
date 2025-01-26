@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Profile } from '@entities';
+import { Profile } from 'entities/profile';
 import { RootState } from './store';
 
 const profileSlice = createSlice({

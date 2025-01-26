@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"start": "craco start",
-		"build": "craco build",
+		"start": "react-scripts start",
+		"build": "react-scripts build",
 		"serve": "node ./scripts/set.env.js && serve -s build -p 3000",
-		"test": "craco test",
+		"test": "react-scripts test",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"format": "prettier --write ./**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",

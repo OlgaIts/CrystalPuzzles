@@ -1,16 +1,16 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 
 .progress_graph {
 	width: 100%;
 	max-height: 347px;
 	aspect-ratio: 1 / 1;
-	background-image: url('~assets/card.background/progress-2.svg');
+	background-image: url('#{$assets}/card.background/progress-2.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
 	// background-size: cover;
 
 	&:hover {
-		background-image: url('~assets/card.background/progress_hover.svg');
+		background-image: url('#{$assets}/card.background/progress_hover.svg');
 	}
 
 	@include sm() {

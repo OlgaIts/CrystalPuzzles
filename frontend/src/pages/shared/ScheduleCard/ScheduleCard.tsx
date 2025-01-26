@@ -5,19 +5,18 @@ import moment from 'moment';
 import {
 	deleteLesson,
 	getCurrentDate,
-	getCurrentTrainer,
-	updateLesson
-} from '@app/providers/store';
-import { Button, CustomTimePicker, Modal } from '@shared/ui';
+	getCurrentTrainer
+} from 'app/providers/store';
+import { Button, CustomTimePicker, Modal } from 'shared/ui';
 import joinName from 'entities/profile/assets/joinName';
-import { ReactComponent as ClockIcon } from '@shared/assets/svg/clock.svg';
-import { ReactComponent as Trash } from '@shared/assets/svg/trash.svg';
-import { ReactComponent as Pencil } from '@shared/assets/svg/pencil.svg';
-import { ReactComponent as CircleCloseIcon } from '@shared/assets/svg/circle-close.svg';
-import { ReactComponent as SaveIcon } from '@shared/assets/svg/circle-save.svg';
-import { getLessons } from '@app/providers/store/service/getLessons';
+import { ReactComponent as ClockIcon } from 'shared/assets/svg/clock.svg';
+import { ReactComponent as Trash } from 'shared/assets/svg/trash.svg';
+import { ReactComponent as Pencil } from 'shared/assets/svg/pencil.svg';
+import { ReactComponent as CircleCloseIcon } from 'shared/assets/svg/circle-close.svg';
+import { ReactComponent as SaveIcon } from 'shared/assets/svg/circle-save.svg';
+import { getLessons } from 'app/providers/store/service/getLessons';
 import PlacesDropdown from 'features/placesDropdown/PlacesDropdown/PlacesDropdown';
-import { Lesson } from '@entities';
+import { Lesson } from 'entities/lesson';
 import { type LessonI } from 'entities/lesson/api/lessonApi.interface';
 import 'react-time-picker/dist/TimePicker.css';
 import styles from './ScheduleCard.module.scss';
@@ -46,12 +45,11 @@ export const ScheduleCard = ({ item, className }: ScheduleCardProps) => {
 	});
 
 	const handleUpdate = async () => {
-		const [updatedLesson, err] = await Lesson.update({ ...editLesson });
+		const [, err] = await Lesson.update({ ...editLesson });
 		if (err) {
 			setError('Не удалось обновить урок. Попробуйте ещё раз');
 			return;
 		}
-		dispatch(updateLesson(updatedLesson));
 		setIsEditing(false);
 		getLessons(trainer_id!, moment(currentDate));
 	};

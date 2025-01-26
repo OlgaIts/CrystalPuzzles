@@ -5,11 +5,11 @@ import Wrapper from './wrapper/Wrapper';
 import Input from './input/Input';
 import Password from './password/Password';
 import Politics from './policy/Policy';
-import { Button } from '@shared/ui';
-import { mapUserForm } from '@entities';
-import { Auth } from '@shared/api';
+import { Button } from 'shared/ui';
+import { mapUserForm } from 'entities/profile';
+import { Auth } from 'shared/api';
 import { useDispatch } from 'react-redux';
-import { selectProfile, setProfile } from '@app/providers/store';
+import { selectProfile, setProfile } from 'app/providers/store';
 import { useSelector } from 'react-redux';
 
 export default function CheckInPage({ login = false }: any) {

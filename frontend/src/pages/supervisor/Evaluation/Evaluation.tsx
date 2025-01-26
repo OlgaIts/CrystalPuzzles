@@ -1,5 +1,5 @@
 import styles from './Evaluation.module.scss';
-import { Page, Button } from '@shared/ui';
+import { Page, Button } from 'shared/ui';
 import { Table } from './table/Table';
 
 interface EvaluationPageProps {

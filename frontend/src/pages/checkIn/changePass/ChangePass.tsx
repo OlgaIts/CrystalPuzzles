@@ -1,12 +1,12 @@
-import { mapUserForm } from '@entities';
-import { Button } from '@shared/ui';
+import { mapUserForm } from 'entities/profile';
+import { Button } from 'shared/ui';
 import Politics from '../policy/Policy';
 import Password from '../password/Password';
 import styles from './ChangePass.module.scss';
 import { FormEvent, useState } from 'react';
 import Wrapper from '../wrapper/Wrapper';
 import Input from '../input/Input';
-import { Auth } from '@shared/api';
+import { Auth } from 'shared/api';
 
 export default function ChangePass() {
 	const [err, setErr] = useState<string | null>(null);

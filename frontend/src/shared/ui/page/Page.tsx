@@ -1,7 +1,7 @@
 import { ReactNode, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import classNames from 'classnames';
-import { selectIsLoading, setHeader } from '@store/app';
+import { selectIsLoading, setHeader } from 'app/providers/store/app';
 import styles from './Page.module.scss';
 import { useSelector } from 'react-redux';
 import Spinner from '../spinner/Spinner';

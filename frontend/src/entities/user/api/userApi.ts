@@ -1,4 +1,4 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import { PasswordParams } from './userApi.inerface';
 import { AxiosInstance } from 'axios';
 

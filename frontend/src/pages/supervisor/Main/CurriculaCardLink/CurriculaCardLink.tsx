@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import { CardLink } from '@shared/ui';
-import { ReactComponent as Arrow } from '@shared/assets/svg/arrow_45.svg';
-import { curriculum } from '@shared/consts';
-import { useResize } from '@shared/hooks';
+import { CardLink } from 'shared/ui';
+import { ReactComponent as Arrow } from 'shared/assets/svg/arrow_45.svg';
+import { curriculum } from 'shared/consts';
+import { useResize } from 'shared/hooks';
 import styles from './CurriculaCardLink.module.scss';
 
 interface CurriculaCardLinkProps {

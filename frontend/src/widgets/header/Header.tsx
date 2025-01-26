@@ -1,7 +1,7 @@
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '@shared/assets/header/logo.svg';
-import { selectHeader } from '@store/app';
+import { ReactComponent as Logo } from 'shared/assets/header/logo.svg';
+import { selectHeader } from 'app/providers/store/app';
 import { useSelector } from 'react-redux';
 
 export default function Header({ check_in = false }: any) {

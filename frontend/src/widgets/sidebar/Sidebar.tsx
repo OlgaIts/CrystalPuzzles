@@ -1,13 +1,13 @@
 import styles from './Sidebar.module.scss';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { useSwipe, useResize } from '@hooks';
-import { selectProfile } from '@store/profile';
-import { ReactComponent as Arrow } from '@assets/svg/arrow.svg';
-import exit from 'assets/sidebar/exit.svg';
+import { useSwipe, useResize } from 'shared/hooks';
+import { selectProfile } from 'app/providers/store/profile';
+import { ReactComponent as Arrow } from 'shared/assets/svg/arrow.svg';
+import exit from 'shared/assets/sidebar/exit.svg';
 import { NavMenuList } from './navMenu/NavMenu';
 import { Account } from './accaunt/Account';
-import { Auth } from '@shared/api';
+import { Auth } from 'shared/api';
 
 export default function Sidebar() {
 	const [isOpen, setIsOpen]: any = useState(false);

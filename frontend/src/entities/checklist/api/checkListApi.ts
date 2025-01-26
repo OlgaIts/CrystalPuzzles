@@ -1,4 +1,4 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import { CheckListI } from './checkListApi.interface';
 import { AxiosInstance } from 'axios';
 

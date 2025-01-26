@@ -1,11 +1,11 @@
 import styles from './NavMenu.module.scss';
 import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { supervisorRouter, studentRouter, trainerRouter } from '@shared/routes';
-import { roleAdapter } from '@entities';
+import { supervisorRouter, studentRouter, trainerRouter } from 'shared/routes';
+import { roleAdapter } from 'entities/profile';
 
-import { ReactComponent as Arrow } from 'assets/svg/arrow.svg';
-import home from 'assets/sidebar/home.svg';
+import { ReactComponent as Arrow } from 'shared/assets/svg/arrow.svg';
+import home from 'shared/assets/sidebar/home.svg';
 
 export const NavMenuList = ({ role, isMobile }: any) => {
 	const [isOpen, setOpen]: any = useState(false);

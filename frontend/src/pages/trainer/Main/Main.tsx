@@ -1,8 +1,8 @@
 import styles from './Main.module.scss';
-import { Page, CardLink, Button } from '@shared/ui';
-import { ScheduleList } from '@features';
-import { Notification } from '@widgets';
-import { useResize } from '@hooks';
+import { Page, CardLink, Button } from 'shared/ui';
+import { ScheduleList } from 'features';
+import { Notification } from 'widgets';
+import { useResize } from 'shared/hooks';
 import { Link } from 'react-router-dom';
 
 interface MainPageProps {

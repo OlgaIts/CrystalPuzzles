@@ -1,13 +1,13 @@
 import Cookies from 'js-cookie';
-import { AxiosConfig } from '@shared/api';
+import { AxiosConfig } from 'shared/api';
 import {
 	EditProfileParams,
 	LoginParams,
 	RegisterParams
 } from './auth.interface';
-import { Profile } from '@entities';
-import store from '@app/providers/store/store';
-import { setProfile } from '@app/providers/store';
+import { Profile } from 'entities/profile';
+import store from 'app/providers/store/store';
+import { setProfile } from 'app/providers/store';
 import { AxiosInstance, AxiosResponse } from 'axios';
 
 class Auth {

@@ -1,4 +1,4 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 
 .wrapper {
 	display: grid;
@@ -69,7 +69,7 @@
 		display: flex;
 
 		.train_text {
-			@include font(var(--ff-first), 24px, 500);
+			font: var(--ff-first), 24px, 500;
 			text-align: center;
 			margin-top: auto;
 

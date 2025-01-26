@@ -1,10 +1,10 @@
 import styles from './Progress.module.scss';
-import { Page, Button, UserCard } from '@shared/ui';
-import { CalendarButton } from '@features';
+import { Page, Button, UserCard } from 'shared/ui';
+import { CalendarButton } from 'features';
 import { Graph } from './graph/Graph';
 import { useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { serverUrl } from '@entities';
+import { serverUrl } from 'entities/profile';
 import joinName from 'entities/profile/assets/joinName';
 
 interface ProgressPageProps {
@@ -28,7 +28,7 @@ export default function ProgressPage({ title }: ProgressPageProps) {
 					img={
 						user.photo
 							? serverUrl() + user.photo
-							: require(`assets/avatar/${user.avatar || 0}.png`)
+							: require(`shared/assets/avatar/${user.avatar || 0}.png`)
 					}
 					name={joinName(user)}
 				/>

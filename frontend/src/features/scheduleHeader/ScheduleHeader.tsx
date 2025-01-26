@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { ReactComponent as Arrow } from '@shared/assets/svg/circle_arrow.svg';
+import { ReactComponent as Arrow } from 'shared/assets/svg/circle_arrow.svg';
 import styles from './ScheduleHeader.module.scss';
 
 export default function ScheduleHeader(props: any) {

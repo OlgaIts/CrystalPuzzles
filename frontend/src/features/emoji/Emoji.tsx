@@ -1,5 +1,5 @@
 import styles from './Emoji.module.scss';
-import { Button } from '@shared/ui';
+import { Button } from 'shared/ui';
 
 export default function AppraisalPage() {
 	return (

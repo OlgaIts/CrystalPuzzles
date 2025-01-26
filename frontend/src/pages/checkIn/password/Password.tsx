@@ -1,7 +1,7 @@
 import styles from './Password.module.scss';
 import Input from '../input/Input';
-import { ReactComponent as Eye } from '@shared/assets/svg/eye_icon.svg';
-import { ReactComponent as CrossEye } from '@shared/assets/svg/cross_eye.svg';
+import { ReactComponent as Eye } from 'shared/assets/svg/eye_icon.svg';
+import { ReactComponent as CrossEye } from 'shared/assets/svg/cross_eye.svg';
 import { useState } from 'react';
 
 export default function Password({

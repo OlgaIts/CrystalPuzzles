@@ -1,5 +1,5 @@
-import { Page } from '@shared/ui';
-import { Notification } from '@widgets';
+import { Page } from 'shared/ui';
+import { Notification } from 'widgets';
 
 interface NotificationPageProps {
 	title: string;

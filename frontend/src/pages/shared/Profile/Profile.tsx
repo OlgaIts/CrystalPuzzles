@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Page, Button } from '@shared/ui';
+import { Page, Button } from 'shared/ui';
 import joinName from 'entities/profile/assets/joinName';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 import EditProfile from './editProfile/EditProfile';

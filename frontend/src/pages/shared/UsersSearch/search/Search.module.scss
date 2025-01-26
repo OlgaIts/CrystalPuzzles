@@ -1,4 +1,4 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 
 .input {
 	width: 100%;
@@ -6,7 +6,7 @@
 	font: var(--fw-regular) 22px var(--ff-second);
 	background-repeat: no-repeat;
 	background-position: 92% 50%;
-	background-image: url('~assets/svg/search.svg');
+	background-image: url('#{$assets}/svg/search.svg');
 	background-size: 26px;
 	
 	border-radius: var(--radius);

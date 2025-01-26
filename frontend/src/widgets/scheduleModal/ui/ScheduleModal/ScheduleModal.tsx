@@ -1,5 +1,5 @@
-import { getCurrentDate, selectLessons } from '@app/providers/store';
-import { Tabs } from '@pages/shared/Tabs/Tabs';
+import { getCurrentDate, selectLessons } from 'app/providers/store';
+import { Tabs } from 'pages/shared/Tabs/Tabs';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { AddLesson } from '../AddLesson/AddLesson';

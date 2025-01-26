@@ -1,5 +1,4 @@
-import { CheckList } from '@entities';
-import { TrainingI } from 'entities/checklist/api/checkListApi.interface';
+import { CheckList, TrainingI } from 'entities/checklist';
 import { FormEvent } from 'react';
 
 export default function useCreateCheckList({

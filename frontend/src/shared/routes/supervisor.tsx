@@ -3,7 +3,7 @@ import {
 	NotificationPage,
 	ProfilePage,
 	UsersSearchPage
-} from '@pages/shared';
+} from 'pages/shared';
 import {
 	MainPage,
 	ProgressPage,
@@ -11,13 +11,13 @@ import {
 	EvaluationPage,
 	UsersListPage,
 	SchedulePage
-} from '@supervisor';
-import analytics from 'assets/sidebar/analytics.svg';
-import progress from 'assets/sidebar/progress.svg';
-import tables from 'assets/sidebar/tables.svg';
-import schedule from 'assets/sidebar/schedule.svg';
-import feedback from 'assets/sidebar/feedback.svg';
-import home from 'assets/sidebar/home.svg';
+} from 'pages/supervisor';
+import analytics from 'shared/assets/sidebar/analytics.svg';
+import progress from 'shared/assets/sidebar/progress.svg';
+import tables from 'shared/assets/sidebar/tables.svg';
+import schedule from 'shared/assets/sidebar/schedule.svg';
+import feedback from 'shared/assets/sidebar/feedback.svg';
+import home from 'shared/assets/sidebar/home.svg';
 
 const supervisorRouter = [
 	{

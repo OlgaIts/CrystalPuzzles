@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectTrainers, setTrainers } from '@app/providers/store/app';
-import { DropDownButton } from '@features';
-import { User } from '@entities';
+import { selectTrainers, setTrainers } from 'app/providers/store/app';
+import { DropDownButton } from 'features';
+import { User } from 'entities/user';
 import joinName from 'entities/profile/assets/joinName';
 import {
 	getCurrentTrainer,
 	setCurrentTrainer
-} from '@app/providers/store/scheduleModal';
+} from 'app/providers/store/scheduleModal';
 
 interface TrainersDropdownProps {
 	className?: string;

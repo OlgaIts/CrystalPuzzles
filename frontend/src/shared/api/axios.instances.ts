@@ -5,8 +5,8 @@ import axios, {
 } from 'axios';
 import Cookies from 'js-cookie';
 import { ErrorResponse } from 'react-router-dom';
-import { store } from '@app/providers/store';
-import { setIsLoading } from '@app/providers/store/app';
+import { store } from 'app/providers/store';
+import { setIsLoading } from 'app/providers/store/app';
 
 declare global {
 	interface Window {

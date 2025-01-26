@@ -1,5 +1,5 @@
 import styles from './UploadAvatar.module.scss';
-import { ReactComponent as UploadIcon } from '@shared/assets/svg/upload.svg';
+import { ReactComponent as UploadIcon } from 'shared/assets/svg/upload.svg';
 
 export default function UploadAvatar({
 	setPreview,

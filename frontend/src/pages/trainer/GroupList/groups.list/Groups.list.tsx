@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from './Groups.list.module.scss';
 import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { Group } from '@entities';
+import { Group } from 'entities/group';
 import GroupItem from './groupItem/GroupItem';
 
 interface GroupsListProps {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import moment from 'moment';
 import classNames from 'classnames';
-import { ReactComponent as Arrow } from '@shared/assets/svg/circle_arrow.svg';
+import { ReactComponent as Arrow } from 'shared/assets/svg/circle_arrow.svg';
 import styles from './DateChanger.module.scss';
 
 export default function DateChanger({ className, day }: any) {

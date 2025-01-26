@@ -1,16 +1,16 @@
-import { SchedulePage } from '@pages/shared';
+import { SchedulePage } from 'pages/shared';
 import {
 	MainPage,
 	ExercisePage,
 	TrainPage,
 	SurveyPage,
 	RewardPage
-} from '@student';
-import schedule from 'assets/sidebar/schedule.svg';
-import home from 'assets/sidebar/home.svg';
-import survey from 'assets/sidebar/survey.svg';
-import reward from 'assets/sidebar/reward.svg';
-import exercise from 'assets/sidebar/exercise.svg';
+} from 'pages/student';
+import schedule from 'shared/assets/sidebar/schedule.svg';
+import home from 'shared/assets/sidebar/home.svg';
+import survey from 'shared/assets/sidebar/survey.svg';
+import reward from 'shared/assets/sidebar/reward.svg';
+import exercise from 'shared/assets/sidebar/exercise.svg';
 
 const studentRouter = [
 	{

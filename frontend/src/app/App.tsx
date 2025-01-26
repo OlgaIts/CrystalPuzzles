@@ -1,8 +1,8 @@
 import styles from './App.module.scss';
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Sidebar, Header, Footer } from '@widgets';
-import { NotificationModal } from '@shared/ui';
+import { Sidebar, Header, Footer } from 'widgets';
+import { NotificationModal } from 'shared/ui';
 
 export default function App() {
 	const [notification, setNotification]: any = useState(false);

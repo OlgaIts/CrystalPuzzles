@@ -1,9 +1,9 @@
 import styles from './Analytics.module.scss';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Card, UserCard, Page, Button } from '@shared/ui';
-import { CalendarButton } from '@features';
-import { serverUrl } from '@entities';
+import { Card, UserCard, Page, Button } from 'shared/ui';
+import { CalendarButton } from 'features';
+import { serverUrl } from 'entities/profile';
 import joinName from 'entities/profile/assets/joinName';
 import moment from 'moment';
 
@@ -27,7 +27,7 @@ export default function AnalyticsPage({ title }: AnalyticsPageProps) {
 				img={
 					user.photo
 						? serverUrl() + user.photo
-						: require(`assets/avatar/${user.avatar || 0}.png`)
+						: require(`shared/assets/avatar/${user.avatar || 0}.png`)
 				}
 				name={joinName(user)}
 				showBtn

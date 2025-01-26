@@ -1,6 +1,6 @@
 import styles from './Survey.module.scss';
-import { Page } from '@shared/ui';
-import { ReactComponent as File } from '@shared/assets/svg/file.svg';
+import { Page } from 'shared/ui';
+import { ReactComponent as File } from 'shared/assets/svg/file.svg';
 
 interface SurveyPageProps {
 	title: string;

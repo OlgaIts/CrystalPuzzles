@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { CardLink } from '@shared/ui/card';
+import { CardLink } from 'shared/ui/card';
 import styles from './ProgressCardLink.module.scss';
 
 interface ProgressCardLinkProps {

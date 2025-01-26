@@ -1,8 +1,8 @@
 import styles from './Main.module.scss';
-import { Modal, Page } from '@shared/ui';
-import { Feedback, ScheduleList } from '@features';
-import { CardLink, Button } from '@shared/ui';
-import { useResize } from '@shared/hooks';
+import { Modal, Page } from 'shared/ui';
+import { Feedback, ScheduleList } from 'features';
+import { CardLink, Button } from 'shared/ui';
+import { useResize } from 'shared/hooks';
 import { useState } from 'react';
 // import { useState } from 'react';
 

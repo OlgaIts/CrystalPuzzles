@@ -1,4 +1,4 @@
-import { CardLink } from '@shared/ui/card';
+import { CardLink } from 'shared/ui/card';
 import styles from './AnalyticCardLink.module.scss';
 
 export const AnalyticCardLink = ({ className }: { className?: string }) => {

@@ -1,4 +1,4 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import { AxiosInstance } from 'axios';
 
 export class PlaceApi {

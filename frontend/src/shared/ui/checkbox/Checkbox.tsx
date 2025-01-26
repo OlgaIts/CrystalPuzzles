@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import { ReactComponent as CheckedIcon } from '@shared/assets/svg/checked.svg';
+import { ReactComponent as CheckedIcon } from 'shared/assets/svg/checked.svg';
 import styles from './Checkbox.module.scss';
 import classNames from 'classnames';
 

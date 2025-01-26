@@ -1,4 +1,4 @@
-import { User } from '@entities';
+import { User } from 'entities/user';
 import { RefObject, useRef, useEffect, useState } from 'react';
 import {
 	fromEvent,

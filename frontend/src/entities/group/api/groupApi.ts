@@ -1,4 +1,4 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import { AddStudentI, GroupI } from './groupApi.interface';
 
 export class GroupApi {

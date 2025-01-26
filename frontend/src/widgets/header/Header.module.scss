@@ -1,4 +1,4 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 
 .header {
 	padding: 20px 0;
@@ -45,9 +45,8 @@
 
 	.logo {
 		display: flex;
-
 		&::after {
-			content: url('~assets/header/logo_title.svg');
+			content: url('#{$assets}/header/logo_title.svg');
 			margin-left: 10px;
 			display: flex;
 			flex-wrap: nowrap;

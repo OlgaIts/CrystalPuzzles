@@ -1,14 +1,11 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import {
 	LessonCreateParams,
 	LessonGetParams,
 	LessonUpdateParams,
 	StudentI
 } from './lessonApi.interface';
-import { store } from '@store';
-import { setIsLoading } from '@app/providers/store/app';
 
-@LogMethods
 export class LessonApi {
 	#host = AxiosConfig.$authHost;
 
@@ -69,34 +66,4 @@ export class LessonApi {
 			.catch(() => [null, 'Не удалось добавить студента']);
 		return data;
 	}
-}
-
-function LogMethods(target: any) {
-	const descriptors = Object.getOwnPropertyDescriptors(target.prototype);
-	for (const [propName, descriptor] of Object.entries(descriptors)) {
-		const isMethod =
-			typeof descriptor.value == 'function' && propName != 'constructor';
-		if (!isMethod) {
-			continue;
-		}
-		LogMethod(target, propName, descriptor);
-		Object.defineProperty(target.prototype, propName, descriptor);
-	}
-}
-
-function LogMethod(
-	target: any,
-	propertyKey: string | symbol,
-	descriptor: PropertyDescriptor
-) {
-	const originalMethod = descriptor.value;
-	descriptor.value = async function (...args: any[]) {
-		// store.dispatch(setIsLoading(true));
-		console.log(`Calling method  with arguments: ${JSON.stringify(args)}`);
-		const result = await originalMethod.apply(this, args).finally(() => {
-			// store.dispatch(setIsLoading(false));
-			console.log('Method finished');
-		});
-		return result;
-	};
 }

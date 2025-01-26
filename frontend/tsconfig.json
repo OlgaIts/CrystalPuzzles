@@ -15,29 +15,7 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
-		"baseUrl": "./src",
-		"experimentalDecorators": true,
-		"paths": {
-			"@app/*": ["app/*"],
-			"@pages/*": ["pages/*"],
-			"@widgets": ["widgets"],
-			"@features": ["features"],
-			"@entities": ["entities"],
-			"@shared/*": ["shared/*"],
-
-			"@checkIn/*": ["pages/checkIn/*"],
-			"@supervisor": ["pages/supervisor"],
-			"@trainer": ["pages/trainer"],
-			"@student": ["pages/student"],
-
-			"@hooks": ["shared/hooks"],
-			"@api": ["shared/api"],
-			"@store": ["app/providers/store"],
-			"@store/*": ["app/providers/store/*"],
-			"@const": ["shared/const"],
-			"@assets/*": ["shared/assets/*"],
-			"styles/*": ["app/styles/*"]
-		}
+		"baseUrl": "src"
 	},
 	"include": ["src", "custom.d.ts"]
 }

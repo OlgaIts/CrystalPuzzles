@@ -1,13 +1,13 @@
 import styles from './Avatar.module.scss';
-import { Page } from '@shared/ui';
+import { Page } from 'shared/ui';
 import { FormEvent, useState } from 'react';
-import { Button } from '@shared/ui';
-import { ReactComponent as UploadIcon } from '@shared/assets/svg/upload.svg';
+import { Button } from 'shared/ui';
+import { ReactComponent as UploadIcon } from 'shared/assets/svg/upload.svg';
 import { useSelector } from 'react-redux';
-import { selectProfile } from '@store/profile';
-import { User } from '@entities';
-import avatar from '@shared/assets/avatar/0.png';
-import { Auth } from '@shared/api';
+import { selectProfile } from 'app/providers/store/profile';
+import { User } from 'entities/user';
+import avatar from 'shared/assets/avatar/0.png';
+import { Auth } from 'shared/api';
 
 interface AvatarPageProps {
 	title: string;
@@ -68,12 +68,12 @@ export default function AvatarPage({ title }: AvatarPageProps) {
 						return (
 							<img
 								key={index}
-								src={require('@shared/assets/avatar/' + index + '.png')}
+								src={require('shared/assets/avatar/' + index + '.png')}
 								className={styles.img}
 								onClick={() => {
 									setUserPhoto(index);
 									setPreview(
-										require('@shared/assets/avatar/' + index + '.png')
+										require('shared/assets/avatar/' + index + '.png')
 									);
 								}}
 							/>

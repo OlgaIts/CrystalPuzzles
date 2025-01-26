@@ -1,5 +1,5 @@
-import { Button, Page } from '@shared/ui';
-import { Feedback } from '@features';
+import { Button, Page } from 'shared/ui';
+import { Feedback } from 'features';
 
 interface FeedbackPageProps {
 	title: string;

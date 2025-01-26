@@ -1,11 +1,11 @@
 import styles from './Exercise.module.scss';
 import { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { Page } from '@shared/ui';
-import { DateChanger, Feedback } from '@features';
-import { Exercises } from '@widgets';
+import { Page } from 'shared/ui';
+import { DateChanger, Feedback } from 'features';
+import { Exercises } from 'widgets';
 import classNames from 'classnames';
-import { Lesson } from '@entities';
+import { Lesson } from 'entities/lesson';
 
 interface ExercisePageProps {
 	title: string;

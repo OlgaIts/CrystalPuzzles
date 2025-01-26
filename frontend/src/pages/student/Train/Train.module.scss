@@ -1,4 +1,4 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 .container {
 	display: grid;
 	grid-template-columns: 2fr max-content;
@@ -26,7 +26,7 @@
 
 			.trainer_container,
 			.place_container {
-				@include font(var(--ff-second), 24px, 400);
+				font: var(--ff-second), 24px, 400;
 
 				.trainer_title,
 				.place_title {
@@ -59,7 +59,7 @@
 }
 
 .date {
-	@include font(var(--ff-first), 24px, 500);
+	font: var(--ff-first), 24px, 500;
 	@include sm() {
 		font-size: 16px;
 		margin-top: 8px;

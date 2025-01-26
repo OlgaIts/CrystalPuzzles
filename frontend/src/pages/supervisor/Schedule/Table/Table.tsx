@@ -6,9 +6,9 @@ import 'moment/locale/ru';
 import Header from './Header/Header';
 import DaysList from './DaysList/DaysList';
 import DaysOfWeek from './DaysOfWeek/DaysOfWeek';
-import { Modal } from '@shared/ui';
-import { getCurrentTrainer } from '@app/providers/store';
-import { getLessons } from '@app/providers/store/service/getLessons';
+import { Modal } from 'shared/ui';
+import { getCurrentTrainer } from 'app/providers/store';
+import { getLessons } from 'app/providers/store/service/getLessons';
 import styles from './Table.module.scss';
 import { ScheduleModal } from 'widgets/scheduleModal/ui/ScheduleModal/ScheduleModal';
 

@@ -1,12 +1,12 @@
 import { studentRouter, supervisorRouter, trainerRouter } from '.';
-import CheckInPage from '@checkIn/CheckIn';
-import App from '@app/App';
-import { ProfilePage, ErrorPage } from '@pages/shared';
+import CheckInPage from 'pages/checkIn/CheckIn';
+import App from 'app/App';
+import { ProfilePage, ErrorPage } from 'pages/shared';
 import { redirect } from 'react-router-dom';
-import ChangePass from '@pages/checkIn/changePass/ChangePass';
-import { selectProfile } from '@app/providers/store';
+import ChangePass from 'pages/checkIn/changePass/ChangePass';
+import { selectProfile } from 'app/providers/store';
 import { useSelector } from 'react-redux';
-import { Auth } from '@shared/api';
+import { Auth } from 'shared/api';
 import Cookies from 'js-cookie';
 
 const MainRouter = (): any => {

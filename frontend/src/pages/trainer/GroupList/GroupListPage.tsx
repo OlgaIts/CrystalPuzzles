@@ -1,4 +1,4 @@
-import { Page, Button } from '@shared/ui';
+import { Page, Button } from 'shared/ui';
 import GroupsList from './groups.list/Groups.list';
 import { useNavigate } from 'react-router-dom';
 import styles from './GroupListPage.module.scss';

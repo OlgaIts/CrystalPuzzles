@@ -38,23 +38,12 @@ const scheduleSlice = createSlice({
 					);
 				}
 			});
-		},
-		updateLesson(state, action: PayloadAction<LessonI>) {
-			// state.lessons = Object.keys(state.lessons).reduce(
-			// 	(newLessons, key) => {
-			// 		newLessons[key] = state.lessons[key].map((lesson: LessonI) =>
-			// 			lesson.id === action.payload.id ? action.payload : lesson
-			// 		);
-			// 		return newLessons;
-			// 	},
-			// 	{} as typeof state.lessons
-			// );
 		}
 	}
 });
 
 export const selectLessons = (state: RootState) => state.schedule.lessons;
 
-export const { createLessons, setLessons, deleteLesson, updateLesson } =
+export const { createLessons, setLessons, deleteLesson } =
 	scheduleSlice.actions;
 export const scheduleSliceReducer = scheduleSlice.reducer;

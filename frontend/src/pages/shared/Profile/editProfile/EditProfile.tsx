@@ -1,16 +1,16 @@
 import { Dispatch, FormEvent, SetStateAction, useState } from 'react';
 import { useSelector } from 'react-redux';
 import moment from 'moment';
-import { User } from '@entities';
-import { Button, Modal, Title } from '@shared/ui';
-import { mapUserForm } from '@entities';
+import { User } from 'entities/user';
+import { Button, Modal, Title } from 'shared/ui';
+import { mapUserForm } from 'entities/profile';
 import joinName from 'entities/profile/assets/joinName';
 import UploadAvatar from './uploadAvatar/UploadAvatar';
-import { selectProfile } from '@app/providers/store';
-import { ReactComponent as CloseButton } from '@shared/assets/svg/close.svg';
-import avatar from '@shared/assets/avatar/0.png';
+import { selectProfile } from 'app/providers/store';
+import { ReactComponent as CloseButton } from 'shared/assets/svg/close.svg';
+import avatar from 'shared/assets/avatar/0.png';
 import styles from './EditProfile.module.scss';
-import { Auth } from '@shared/api';
+import { Auth } from 'shared/api';
 
 interface EditProfileProps {
 	active: boolean;
@@ -25,12 +25,8 @@ export default function EditProfile({
 }: EditProfileProps) {
 	const profile = useSelector(selectProfile);
 
-	const [preview, setPreview] = useState<string>(
-		profile.photo
-			? profile.photo
-			: profile.avatar
-				? require(`assets/avatar/${profile.avatar}.png`)
-				: avatar
+	const [preview, setPreview] = useState<any>(
+		profile.photo ? profile.photo : profile.avatar || avatar
 	);
 	const [userPhoto, setUserPhoto]: any = useState(null);
 	const [err, setErr] = useState<string | null>(null);

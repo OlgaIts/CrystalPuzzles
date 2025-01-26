@@ -2,10 +2,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import classNames from 'classnames';
 import moment from 'moment';
 import { ScheduleButton } from '../ScheduleButton/ScheduleButton';
-import { setCurrentDate } from '@app/providers/store/scheduleModal';
-import { selectLessons } from '@app/providers/store/schedule';
+import { setCurrentDate } from 'app/providers/store/scheduleModal';
+import { selectLessons } from 'app/providers/store/schedule';
 import styles from './DaysList.module.scss';
-import { ReactComponent as Pencil } from '@shared/assets/svg/pencil.svg';
+import { ReactComponent as Pencil } from 'shared/assets/svg/pencil.svg';
 interface DaysListProps {
 	setModalActive: (day: string) => void;
 }

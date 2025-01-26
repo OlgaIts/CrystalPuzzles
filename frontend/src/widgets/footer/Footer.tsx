@@ -1,8 +1,8 @@
 import styles from './Footer.module.scss';
-import { ReactComponent as Logo } from '@shared/assets/header/logo.svg';
+import { ReactComponent as Logo } from 'shared/assets/header/logo.svg';
 import { ReactComponent as Vk } from './assets/vk.svg';
 import { ReactComponent as Tg } from './assets/tg.svg';
-import { useResize } from '@shared/hooks';
+import { useResize } from 'shared/hooks';
 
 export default function Footer() {
 	const sm = useResize('sm');

@@ -1,5 +1,5 @@
 import styles from './Account.module.scss';
-import { roleAdapter } from '@entities';
+import { roleAdapter } from 'entities/profile';
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ProfileAvatar from 'entities/profile/ui/ProfileAvatar';

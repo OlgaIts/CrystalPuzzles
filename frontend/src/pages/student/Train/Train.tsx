@@ -1,10 +1,10 @@
 import styles from './Train.module.scss';
 import { useEffect, useState } from 'react';
-import { Page } from '@shared/ui';
+import { Page } from 'shared/ui';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { CalendarButton } from '@features';
-import { Lesson } from '@entities';
+import { CalendarButton } from 'features';
+import { Lesson } from 'entities/lesson';
 
 interface TrainPageProps {
 	title: string;

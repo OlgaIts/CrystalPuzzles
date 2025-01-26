@@ -1,5 +1,5 @@
 import styles from './CheckList.module.scss';
-import { Page, Button } from '@shared/ui';
+import { Page, Button } from 'shared/ui';
 import ProfileCard from './ProfileCard/ProfileCard';
 import Info from './Info/Info';
 import { useState } from 'react';

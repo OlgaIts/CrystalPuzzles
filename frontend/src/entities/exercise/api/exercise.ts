@@ -1,4 +1,4 @@
-import { AxiosConfig } from '@api';
+import { AxiosConfig } from 'shared/api';
 import { ExerciseI, ExerciseUpdateI } from './exercise.interface';
 import { AxiosInstance } from 'axios';
 

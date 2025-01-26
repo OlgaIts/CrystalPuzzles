@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import classNames from 'classnames';
-import { selectProfile } from '@app/providers/store';
+import { selectProfile } from 'app/providers/store';
 import styles from './ProfileCard.module.scss';
 
 interface ProfileProps {
@@ -11,7 +11,9 @@ interface ProfileProps {
 export default function ProfileCard({ className }: ProfileProps) {
 	const user = useSelector(selectProfile);
 	const [userPhoto] = useState(
-		user.photo ? user.photo : require(`assets/avatar/${user.avatar || 0}.png`)
+		user.photo
+			? user.photo
+			: require(`shared/assets/avatar/${user.avatar || 0}.png`)
 	);
 
 	return (

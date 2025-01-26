@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import ExerciseItem from './ExerciseItem/ExerciseItem';
 import styles from './Exercises.module.scss';
 import { memo, useEffect, useState } from 'react';
-import { Exercise } from '@entities';
+import { Exercise } from 'entities/exercise';
 import { v4 as uuid } from 'uuid';
 
 interface ExercisesProps {

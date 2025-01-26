@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { ReactComponent as CloseIcon } from '@shared/assets/svg/close.svg';
+import { ReactComponent as CloseIcon } from 'shared/assets/svg/close.svg';
 import styles from './Tabs.module.scss';
 
 interface TabsProps {

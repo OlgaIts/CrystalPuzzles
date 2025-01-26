@@ -1,8 +1,8 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { Page, CardLink, Button } from '@shared/ui';
-import { useResize } from '@shared/hooks';
-import { ScheduleList } from '@features';
-import { Notification } from '@widgets';
+import { Page, CardLink, Button } from 'shared/ui';
+import { useResize } from 'shared/hooks';
+import { ScheduleList } from 'features';
+import { Notification } from 'widgets';
 import { AnalyticCardLink } from './AnalyticCardLink/AnalyticCardLink';
 import { ProgressCardLink } from './ProgressCardLink/ProgressCardLink';
 import { CurriculaCardLink } from './CurriculaCardLink/CurriculaCardLink';

@@ -1,6 +1,6 @@
 import styles from './UsersSearch.module.scss';
 import { useState } from 'react';
-import { Page } from '@shared/ui';
+import { Page } from 'shared/ui';
 import Search from './search/Search';
 import UsersList from './usersList/UsersList';
 

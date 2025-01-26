@@ -1,8 +1,4 @@
-@mixin font($ff, $fs, $fw) {
-	font-family: $ff;
-	font-weight: $fw;
-	font-size: $fs;
-}
+@import 'alias';
 
 @mixin sm() {
 	@media (max-width: 440px) {

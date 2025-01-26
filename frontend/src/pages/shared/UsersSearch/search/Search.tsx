@@ -1,4 +1,4 @@
-import { User } from '@entities';
+import { User } from 'entities/user';
 import styles from './Search.module.scss';
 import { RefObject, useEffect, useRef } from 'react';
 import {

@@ -52,39 +52,36 @@ services:
     networks:
       - backend
       - frontend
+  # front:
+  #   container_name: front
+  #   build: ./frontend/
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - api
+  #   restart: always
+  #   ports:
+  #     - 8080:3000
+  #   networks:
+  #     - frontend
 
-  front:
-    container_name: front
-    build: ./frontend/
-    env_file:
-      - .env
-    depends_on:
-      - api
-    restart: always
-    ports:
-      - 8080:3000
-    networks:
-      - frontend
-  
-  nginx:
-    build:
-      context: ./nginx  
-      dockerfile: Dockerfile
-    container_name: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro 
-      - /var/log/nginx/access.log:/var/log/nginx/access.log
-    depends_on:
-      - api
-      - front
-    restart: always
-    networks:
-      - frontend
-      - backend
-
-  
+  # nginx:
+  #   build:
+  #     context: ./nginx  
+  #     dockerfile: Dockerfile
+  #   container_name: nginx
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro 
+  #     - /var/log/nginx/access.log:/var/log/nginx/access.log
+  #   depends_on:
+  #     - api
+  #     - front
+  #   restart: always
+  #   networks:
+  #     - frontend
+  #     - backend
 
 networks:
   backend:

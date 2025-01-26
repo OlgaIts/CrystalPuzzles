@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Page } from '@shared/ui';
+import { Page } from 'shared/ui';
 import Table from './Table/Table';
 import TrainersDropdown from 'features/trainersDropdown/TrainersDropdown';
 import styles from './Schedule.module.scss';

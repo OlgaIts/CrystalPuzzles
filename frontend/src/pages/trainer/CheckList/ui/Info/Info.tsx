@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import moment from 'moment';
 import classNames from 'classnames';
-import { Lesson } from '@entities';
+import { Lesson } from 'entities/lesson';
 import { type LessonI } from 'entities/lesson/api/lessonApi.interface';
 import styles from './Info.module.scss';
 

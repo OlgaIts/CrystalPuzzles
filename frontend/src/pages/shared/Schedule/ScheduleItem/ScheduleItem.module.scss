@@ -1,7 +1,7 @@
-@use '~styles/mixins' as *;
+@use 'app/styles/mixins' as *;
 
 .link {
-	@include font(var(--ff-second), 24px, 400);
+	font: var(--ff-second), 24px, 400;
 	.row {
 		height: 57px;
 		display: grid;

@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { type TrainerI } from './scheduleModal';
 import { RootState } from './store';
-// import Place from '@shared/api/place';
+// import Place from 'shared/api/place';
 
 interface AppState {
 	header: string;

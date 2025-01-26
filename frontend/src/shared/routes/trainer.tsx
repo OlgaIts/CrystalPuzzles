@@ -3,21 +3,21 @@ import {
 	NotificationPage,
 	ProfilePage,
 	UsersSearchPage
-} from '@pages/shared';
+} from 'pages/shared';
 import {
 	MainPage,
 	CheckListPage,
 	GroupListPage,
 	CreateGroupPage,
 	TrainerExercisePage
-} from '@trainer';
-import { SchedulePage } from '@pages/shared';
+} from 'pages/trainer';
+import { SchedulePage } from 'pages/shared';
 
-import feedback from 'assets/sidebar/feedback.svg';
-import schedule from 'assets/sidebar//schedule.svg';
-import group from 'assets/sidebar/group.svg';
-import students from 'assets/sidebar/students.svg';
-import home from 'assets/sidebar/home.svg';
+import feedback from 'shared/assets/sidebar/feedback.svg';
+import schedule from 'shared/assets/sidebar//schedule.svg';
+import group from 'shared/assets/sidebar/group.svg';
+import students from 'shared/assets/sidebar/students.svg';
+import home from 'shared/assets/sidebar/home.svg';
 
 const trainerRouter = [
 	{

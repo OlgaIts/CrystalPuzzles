@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import classNames from 'classnames';
-// import { useResize } from '@shared/hooks';
-import { Title } from '@shared/ui';
+// import { useResize } from 'shared/hooks';
+import { Title } from 'shared/ui';
 import { NotificationItem } from './NotificationItem/NotificationItem';
 import { NotificationItemSeparate } from './NotificationItemSeparate/NotificationItemSeparate';
 import styles from './Notification.module.scss';

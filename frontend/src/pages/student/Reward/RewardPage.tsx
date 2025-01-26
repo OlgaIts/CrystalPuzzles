@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Page, Title } from '@shared/ui';
+import { Page, Title } from 'shared/ui';
 import gold from './assets/gold.svg';
 import silver from './assets/silver.svg';
 import bronze from './assets/bronze.svg';

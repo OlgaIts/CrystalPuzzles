@@ -1,7 +1,7 @@
-import { serverUrl } from '@entities';
-import { User } from '@entities';
-import { Page } from '@shared/ui';
-import { UserCard } from '@shared/ui/card';
+import { serverUrl } from 'entities/profile';
+import { User } from 'entities/user';
+import { Page } from 'shared/ui';
+import { UserCard } from 'shared/ui/card';
 import joinName from 'entities/profile/assets/joinName';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +35,7 @@ export default function UsersListPage({ type, title }: UsersListPageProps) {
 						img={
 							user.photo
 								? serverUrl() + user.photo
-								: require(`assets/avatar/${user.avatar || 0}.png`)
+								: require(`shared/assets/avatar/${user.avatar || 0}.png`)
 						}
 						name={joinName(user)}
 					/>

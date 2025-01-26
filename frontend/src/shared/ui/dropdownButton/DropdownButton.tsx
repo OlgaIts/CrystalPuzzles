@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classNames from 'classnames';
-import { ReactComponent as SmallArrow } from '@shared/assets/svg/small_arrow.svg';
+import { ReactComponent as SmallArrow } from 'shared/assets/svg/small_arrow.svg';
 import Checkbox from '../checkbox/Checkbox';
 import styles from './DropdownButton.module.scss';
 import { v4 as uuid } from 'uuid';
